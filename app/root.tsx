@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import Navigation from "./navigation/Navigation";
 
 import type { Route } from "./+types/root";
 import "./app.css";
@@ -32,10 +33,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-olive-50 dark:bg-zinc-950 text-stone-900 dark:text-stone-100">
+      <body className="text-stone-900 dark:text-stone-100">
+        <Navigation />
         {children}
         <ScrollRestoration />
         <Scripts />
+        <div className="paperOverlay" />
       </body>
     </html>
   );

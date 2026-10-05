@@ -5,12 +5,12 @@ import CartFilledIcon from "../icons/CartFilled";
 
 export default function Navigation() {
   return (
-    <nav>
+    <nav className="sticky top-0 z-50">
       <div className="p-4 grid grid-cols-2 md:grid-cols-3 items-center max-w-7xl mx-auto">
         <h1 className="col-start-1 col-end-2 row-start-1 row-end-2 font-serif text-4xl font-semibold italic tracking-tight">
           De <span className="text-amber-700">Oude</span> Letter
         </h1>
-        <div className="col-start-1 col-end-3 row-start-2 row-end-3 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center border pl-4 gap-2 border-amber-700/30 h-11.5 rounded-full overflow-hidden md:max-w-md w-full focus-within:ring-2 focus-within:ring-amber-700">
+        <div className="col-start-1 col-end-3 row-start-2 row-end-3 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center border pl-4 gap-2 border-amber-700/30 h-11.5 rounded-full overflow-hidden md:max-w-md w-full focus-within:ring-2 focus-within:ring-amber-700 bg-olive-50">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"

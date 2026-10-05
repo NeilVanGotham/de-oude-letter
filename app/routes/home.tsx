@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import Navigation from "../navigation/Navigation";
+import HeroSearch from "../hero-search/HeroSearch";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,5 +12,9 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Navigation />;
+  return (
+    <main>
+      <HeroSearch />
+    </main>
+  );
 }
