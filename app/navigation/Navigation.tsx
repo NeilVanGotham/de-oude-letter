@@ -6,11 +6,11 @@ import CartFilledIcon from "../icons/CartFilled";
 export default function Navigation() {
   return (
     <nav>
-      <div className="p-4 flex justify-between items-center max-w-7xl mx-auto">
-        <h1 className="font-serif text-4xl font-semibold italic tracking-tight">
+      <div className="p-4 grid grid-cols-2 md:grid-cols-3 items-center max-w-7xl mx-auto">
+        <h1 className="col-start-1 col-end-2 row-start-1 row-end-2 font-serif text-4xl font-semibold italic tracking-tight">
           De <span className="text-amber-700">Oude</span> Letter
         </h1>
-        <div className="flex items-center border pl-4 gap-2 border-amber-700/30 h-[46px] rounded-full overflow-hidden max-w-md w-full">
+        <div className="col-start-1 col-end-3 row-start-2 row-end-3 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center border pl-4 gap-2 border-amber-700/30 h-11.5 rounded-full overflow-hidden md:max-w-md w-full focus-within:ring-2 focus-within:ring-amber-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -26,7 +26,7 @@ export default function Navigation() {
             className="w-full h-full outline-none text-stone-500 bg-transparent placeholder-stone-500 text-sm"
           />
         </div>
-        <div className="flex gap-4">
+        <div className="col-start-2 col-end-3 row-start-1 row-end-2 md:col-start-3 md:col-end-4 flex gap-4 justify-end">
           <button className="group p-2 text-amber-700 rounded flex flex-col items-center cursor-pointer">
             <span className="group-hover:hidden">
               <FavouriteIcon />
@@ -47,7 +47,7 @@ export default function Navigation() {
           </button>
         </div>
       </div>
-      <span className="border-b border-stone-300 dark:border-stone-700 w mx-auto block"></span>
+      <span className="border-b border-stone-300 dark:border-stone-700 max-w-6xl mx-auto block"></span>
     </nav>
   );
 }
