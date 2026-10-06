@@ -2,7 +2,7 @@ import FavouriteIcon from "~/icons/Favourite";
 
 export default function HeroBook() {
   return (
-    <div className="flex gap-8 pb-16">
+    <div className="flex gap-8 py-16">
       <img
         src="https://covers.openlibrary.org/b/ISBN/9789021056531-L.jpg"
         alt="Boekcover van Het Ultieme Geheim"

@@ -5,7 +5,7 @@ import CartFilledIcon from "../icons/CartFilled";
 
 export default function Navigation() {
   return (
-    <nav className="sticky top-0 z-50">
+    <nav className="sticky top-0 z-50 bg-olive-50 dark:bg-olive-900">
       <div className="p-4 grid grid-cols-2 md:grid-cols-3 items-center max-w-7xl mx-auto">
         <h1 className="col-start-1 col-end-2 row-start-1 row-end-2 font-serif text-4xl font-semibold italic tracking-tight">
           De <span className="text-amber-700">Oude</span> Letter
