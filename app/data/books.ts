@@ -1,4 +1,11 @@
-import type { Book } from "./db";
+export interface Book {
+  isbn: string;
+  title: string;
+  author: string;
+  description: string;
+  price: number;
+  genre: string;
+}
 
 // Bestsellers van Standaard Boekhandel (top 10 fictie, non-fictie, jeugd en e-books
 // + nieuw en pre-orders op de homepage), stand van 6 oktober 2026.
@@ -148,24 +155,6 @@ export const books: Book[] = [
       "Vijf jaar geleden verdween Elise op een wijnfeest in een Limburgs dorpje. Wat van haar teruggevonden werd, tart alle verbeelding en maakt haar verdwijning tot de bekendste cold case van het land.",
     price: 24.99,
     genre: "Thrillers",
-  },
-  {
-    isbn: "9789020564563",
-    title: "Threshing Day",
-    author: "Rebecca Yarros",
-    description:
-      "Het nieuwe boek in de Fourth Wing-serie, met dertien verhalen over iedereens favoriete personages en hun draken.",
-    price: 23.99,
-    genre: "Fantasy",
-  },
-  {
-    isbn: "9789044663259",
-    title: "Moeder, courage!",
-    author: "Lara Taveirne",
-    description:
-      "Lara Taveirne schrijft over haar ervaringen in ploeterland, en hoe zij de moederrol anders invult dan haar moeder.",
-    price: 17.99,
-    genre: "Literatuur",
   },
   {
     isbn: "9789400520486",
