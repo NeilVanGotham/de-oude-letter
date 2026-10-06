@@ -34,10 +34,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="text-stone-800 dark:text-stone-100">
-        <Navigation />
-        {children}
-        <ScrollRestoration />
-        <Scripts />
+        <div className="bg-olive-50 dark:bg-olive-900">
+          <Navigation />
+          {children}
+          <ScrollRestoration />
+          <Scripts />
+        </div>
         <div className="paperOverlay" />
       </body>
     </html>
