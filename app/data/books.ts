@@ -1,12 +1,4 @@
-export interface Book {
-  isbn: string;
-  title: string;
-  author: string;
-  description: string;
-  price: number;
-  genre: string;
-  cover: string;
-}
+import type Book from "~/types/Book";
 
 // Bestsellers van Standaard Boekhandel (top 10 fictie, non-fictie, jeugd en e-books
 // + nieuw en pre-orders op de homepage), stand van 6 oktober 2026.
