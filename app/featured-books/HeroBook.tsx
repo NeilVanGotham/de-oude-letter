@@ -1,7 +1,13 @@
 import FavouriteIcon from "~/icons/Favourite";
 import type Book from "~/types/Book";
 
-export default function HeroBook({ book }: { book: Book }) {
+export default function HeroBook({
+  book,
+  catchPhrase,
+}: {
+  book: Book;
+  catchPhrase: string;
+}) {
   return (
     <div className="flex gap-8 py-16">
       <img
@@ -11,7 +17,7 @@ export default function HeroBook({ book }: { book: Book }) {
       />
       <div className="flex flex-col justify-center">
         <p className="pb-2 text-amber-700 font-serif italic text-xl">
-          Nieuw deze maand
+          {catchPhrase}
         </p>
         <h3 className="text-2xl font-serif font-medium">{book.title}</h3>
         <p className="pb-4">
