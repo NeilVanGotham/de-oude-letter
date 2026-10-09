@@ -4,7 +4,10 @@ export default function HeroSearch() {
       <h2 className="text-5xl font-medium font-serif text-stone-800">
         Wat wil je lezen?
       </h2>
-      <div className="col-start-1 col-end-3 row-start-2 row-end-3 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center border pl-4 gap-2 border-amber-700/30 h-11.5 rounded-full overflow-hidden md:max-w-3xl w-full focus-within:ring-2 focus-within:ring-amber-700 bg-olive-50">
+      <div
+        id="hero-search"
+        className="col-start-1 col-end-3 row-start-2 row-end-3 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center border pl-4 gap-2 border-amber-700/30 h-11.5 rounded-full overflow-hidden md:max-w-3xl w-full focus-within:ring-2 focus-within:ring-amber-700 bg-olive-50"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"

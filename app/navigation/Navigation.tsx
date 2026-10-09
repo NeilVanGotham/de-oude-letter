@@ -2,15 +2,46 @@ import FavouriteIcon from "../icons/Favourite";
 import CartIcon from "../icons/Cart";
 import FavouriteFilledIcon from "../icons/FavouriteFilled";
 import CartFilledIcon from "../icons/CartFilled";
+import { useEffect, useState } from "react";
+import { useMatches } from "react-router";
+
+function useHeroSearchInView() {
+  const hasHeroSearch = useMatches().some(
+    (match) => (match.handle as { heroSearch?: boolean } | undefined)?.heroSearch,
+  );
+  const [inView, setInView] = useState(hasHeroSearch);
+
+  useEffect(() => {
+    const heroSearch = document.getElementById("hero-search");
+    if (!heroSearch) {
+      setInView(false);
+      return;
+    }
+    // Negatieve marge: de zoekbalk telt als "uit beeld" zodra hij onder de sticky header schuift
+    const observer = new IntersectionObserver(
+      ([entry]) => setInView(entry.isIntersecting),
+      { rootMargin: "-80px 0px 0px 0px" },
+    );
+    observer.observe(heroSearch);
+    return () => observer.disconnect();
+  }, [hasHeroSearch]);
+
+  return inView;
+}
 
 export default function Navigation() {
+  const heroSearchInView = useHeroSearchInView();
+
   return (
     <nav className="sticky top-0 z-50 bg-olive-50 dark:bg-olive-900">
       <div className="p-4 grid grid-cols-2 md:grid-cols-3 items-center max-w-7xl mx-auto">
         <h1 className="col-start-1 col-end-2 row-start-1 row-end-2 font-serif text-4xl font-semibold italic tracking-tight">
           De <span className="text-amber-700">Oude</span> Letter
         </h1>
-        <div className="col-start-1 col-end-3 row-start-2 row-end-3 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center border pl-4 gap-2 border-amber-700/30 h-11.5 rounded-full overflow-hidden md:max-w-md w-full focus-within:ring-2 focus-within:ring-amber-700 bg-olive-50">
+        <div
+          aria-hidden={heroSearchInView}
+          className={`${heroSearchInView ? "hidden md:flex md:invisible md:opacity-0" : "flex opacity-100"} transition-opacity duration-200 col-start-1 col-end-3 row-start-2 row-end-3 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 items-center border pl-4 gap-2 border-amber-700/30 h-11.5 rounded-full overflow-hidden md:max-w-md w-full focus-within:ring-2 focus-within:ring-amber-700 bg-olive-50`}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"

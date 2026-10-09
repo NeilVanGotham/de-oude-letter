@@ -9,7 +9,7 @@ export default function HeroBook({
   catchPhrase: string;
 }) {
   return (
-    <div className="flex gap-8 py-16">
+    <div className="flex gap-8 py-16 border-r border-stone-300">
       <img
         src={book.cover}
         alt={`Boekcover van ${book.title}`}

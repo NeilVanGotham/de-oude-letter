@@ -12,6 +12,8 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
+export const handle = { heroSearch: true };
+
 export default function Home() {
   return (
     <main>
