@@ -35,7 +35,12 @@ export default function FeaturedBooks() {
       <HeroBook book={heroBook} catchPhrase={catchPhrases[currentIndex]} />
       <ul className="flex flex-col gap-2">
         {featuredBooks.map((book, index) => (
-          <FeaturedBookItem book={book} catchPhrase={catchPhrases[index]} />
+          <FeaturedBookItem
+            key={book.isbn}
+            book={book}
+            catchPhrase={catchPhrases[index]}
+            onClick={() => setCurrentIndex(index)}
+          />
         ))}
       </ul>
     </div>

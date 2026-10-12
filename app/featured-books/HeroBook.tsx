@@ -10,11 +10,13 @@ export default function HeroBook({
 }) {
   return (
     <div className="flex gap-8 py-16 border-r border-stone-300">
-      <img
-        src={book.cover}
-        alt={`Boekcover van ${book.title}`}
-        className="w-xs max-h-sm h-auto object-cover"
-      />
+      <div className="shrink-0">
+        <img
+          src={book.cover}
+          alt={`Boekcover van ${book.title}`}
+          className="w-[320px] h-121.5 object-cover"
+        />
+      </div>
       <div className="flex flex-col justify-center">
         <p className="pb-2 text-amber-700 font-serif italic text-xl">
           {catchPhrase}
