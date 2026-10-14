@@ -14,7 +14,7 @@ export const books: Book[] = [
     price: 23.99,
     genre: "Literatuur",
     category: "fiction",
-    cover: "/images/covers/9789044662368.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789044662368.jpg`,
   },
   {
     isbn: "9789022343135",
@@ -25,7 +25,7 @@ export const books: Book[] = [
     price: 22.5,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789022343135.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789022343135.jpg`,
   },
   {
     isbn: "9789403139135",
@@ -36,7 +36,7 @@ export const books: Book[] = [
     price: 24.99,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789403139135.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789403139135.jpg`,
   },
   {
     isbn: "9789028454040",
@@ -47,7 +47,7 @@ export const books: Book[] = [
     price: 24.99,
     genre: "Romans",
     category: "fiction",
-    cover: "/images/covers/9789028454040.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789028454040.jpg`,
   },
   {
     isbn: "9789049211363",
@@ -58,7 +58,7 @@ export const books: Book[] = [
     price: 22.99,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789049211363.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789049211363.jpg`,
   },
   {
     isbn: "9789049211967",
@@ -69,7 +69,7 @@ export const books: Book[] = [
     price: 22.99,
     genre: "Romans",
     category: "fiction",
-    cover: "/images/covers/9789049211967.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789049211967.jpg`,
   },
   {
     isbn: "9789402719727",
@@ -80,7 +80,7 @@ export const books: Book[] = [
     price: 23.99,
     genre: "Literatuur",
     category: "fiction",
-    cover: "/images/covers/9789402719727.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789402719727.jpg`,
   },
   {
     isbn: "9789029553568",
@@ -91,7 +91,7 @@ export const books: Book[] = [
     price: 26.99,
     genre: "Literatuur",
     category: "fiction",
-    cover: "/images/covers/9789029553568.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789029553568.jpg`,
   },
   {
     isbn: "9789402720426",
@@ -102,7 +102,7 @@ export const books: Book[] = [
     price: 24.99,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789402720426.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789402720426.jpg`,
   },
   {
     isbn: "9789057208201",
@@ -113,7 +113,7 @@ export const books: Book[] = [
     price: 27.99,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789057208201.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789057208201.jpg`,
   },
   {
     isbn: "9789049209780",
@@ -124,7 +124,7 @@ export const books: Book[] = [
     price: 20.99,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789049209780.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789049209780.jpg`,
   },
   {
     isbn: "9789026370182",
@@ -135,7 +135,7 @@ export const books: Book[] = [
     price: 24.99,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789026370182.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789026370182.jpg`,
   },
   {
     isbn: "9789046835326",
@@ -146,7 +146,7 @@ export const books: Book[] = [
     price: 9.99,
     genre: "Romans",
     category: "fiction",
-    cover: "/images/covers/9789046835326.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789046835326.jpg`,
   },
   {
     isbn: "9789026371356",
@@ -157,7 +157,7 @@ export const books: Book[] = [
     price: 22.99,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789026371356.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789026371356.jpg`,
   },
   {
     isbn: "9789021056531",
@@ -168,7 +168,7 @@ export const books: Book[] = [
     price: 29.99,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789021056531.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789021056531.jpg`,
   },
   {
     isbn: "9789493547148",
@@ -179,7 +179,7 @@ export const books: Book[] = [
     price: 24.99,
     genre: "Thrillers",
     category: "fiction",
-    cover: "/images/covers/9789493547148.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789493547148.jpg`,
   },
   {
     isbn: "9789400520486",
@@ -190,7 +190,7 @@ export const books: Book[] = [
     price: 26.99,
     genre: "Literatuur",
     category: "fiction",
-    cover: "/images/covers/9789400520486.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789400520486.jpg`,
   },
 
   // Non-fictie
@@ -203,7 +203,7 @@ export const books: Book[] = [
     price: 29.99,
     genre: "Biografie",
     category: "non-fiction",
-    cover: "/images/covers/9789048874002.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789048874002.jpg`,
   },
   {
     isbn: "9789059960800",
@@ -214,7 +214,7 @@ export const books: Book[] = [
     price: 19.99,
     genre: "Puzzels",
     category: "non-fiction",
-    cover: "/images/covers/9789059960800.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789059960800.jpg`,
   },
   {
     isbn: "9789059968042",
@@ -225,7 +225,7 @@ export const books: Book[] = [
     price: 24.99,
     genre: "True crime",
     category: "non-fiction",
-    cover: "/images/covers/9789059968042.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789059968042.jpg`,
   },
   {
     isbn: "9789059966529",
@@ -236,7 +236,7 @@ export const books: Book[] = [
     price: 29.99,
     genre: "Koken",
     category: "non-fiction",
-    cover: "/images/covers/9789059966529.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789059966529.jpg`,
   },
   {
     isbn: "9789465303703",
@@ -247,7 +247,7 @@ export const books: Book[] = [
     price: 24.5,
     genre: "Zelfhulp",
     category: "non-fiction",
-    cover: "/images/covers/9789465303703.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789465303703.jpg`,
   },
   {
     isbn: "9789465305592",
@@ -258,7 +258,7 @@ export const books: Book[] = [
     price: 27,
     genre: "Reizen",
     category: "non-fiction",
-    cover: "/images/covers/9789465305592.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789465305592.jpg`,
   },
   {
     isbn: "9789464044263",
@@ -269,7 +269,7 @@ export const books: Book[] = [
     price: 34.99,
     genre: "Koken",
     category: "non-fiction",
-    cover: "/images/covers/9789464044263.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789464044263.jpg`,
   },
   {
     isbn: "9789464107302",
@@ -280,7 +280,7 @@ export const books: Book[] = [
     price: 29.99,
     genre: "Koken",
     category: "non-fiction",
-    cover: "/images/covers/9789464107302.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789464107302.jpg`,
   },
   {
     isbn: "9789401492683",
@@ -291,7 +291,7 @@ export const books: Book[] = [
     price: 17.99,
     genre: "Puzzels",
     category: "non-fiction",
-    cover: "/images/covers/9789401492683.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789401492683.jpg`,
   },
   {
     isbn: "9789059964761",
@@ -302,7 +302,7 @@ export const books: Book[] = [
     price: 25.99,
     genre: "Geld & beleggen",
     category: "non-fiction",
-    cover: "/images/covers/9789059964761.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789059964761.jpg`,
   },
   {
     isbn: "9789465305707",
@@ -313,7 +313,7 @@ export const books: Book[] = [
     price: 27,
     genre: "Koken",
     category: "non-fiction",
-    cover: "/images/covers/9789465305707.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789465305707.jpg`,
   },
 
   // Jeugd
@@ -326,7 +326,7 @@ export const books: Book[] = [
     price: 18.99,
     genre: "Kinderboeken",
     category: "youth",
-    cover: "/images/covers/9789464106121.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789464106121.jpg`,
   },
   {
     isbn: "9789048323593",
@@ -337,7 +337,7 @@ export const books: Book[] = [
     price: 14.99,
     genre: "Prentenboeken",
     category: "youth",
-    cover: "/images/covers/9789048323593.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789048323593.jpg`,
   },
   {
     isbn: "9789030511731",
@@ -348,7 +348,7 @@ export const books: Book[] = [
     price: 19.99,
     genre: "Kinderboeken",
     category: "youth",
-    cover: "/images/covers/9789030511731.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789030511731.jpg`,
   },
   {
     isbn: "9789047718246",
@@ -359,7 +359,7 @@ export const books: Book[] = [
     price: 15.99,
     genre: "Prentenboeken",
     category: "youth",
-    cover: "/images/covers/9789047718246.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789047718246.jpg`,
   },
   {
     isbn: "9789025781897",
@@ -370,7 +370,7 @@ export const books: Book[] = [
     price: 16.99,
     genre: "Prentenboeken",
     category: "youth",
-    cover: "/images/covers/9789025781897.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789025781897.jpg`,
   },
   {
     isbn: "9789062229802",
@@ -381,7 +381,7 @@ export const books: Book[] = [
     price: 16.99,
     genre: "Kinderboeken",
     category: "youth",
-    cover: "/images/covers/9789062229802.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789062229802.jpg`,
   },
   {
     isbn: "9789043944892",
@@ -392,7 +392,7 @@ export const books: Book[] = [
     price: 16.5,
     genre: "Prentenboeken",
     category: "youth",
-    cover: "/images/covers/9789043944892.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789043944892.jpg`,
   },
   {
     isbn: "9789493521407",
@@ -403,7 +403,7 @@ export const books: Book[] = [
     price: 17.99,
     genre: "Kinderboeken",
     category: "youth",
-    cover: "/images/covers/9789493521407.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789493521407.jpg`,
   },
   {
     isbn: "9789047700135",
@@ -414,7 +414,7 @@ export const books: Book[] = [
     price: 12.99,
     genre: "Prentenboeken",
     category: "youth",
-    cover: "/images/covers/9789047700135.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789047700135.jpg`,
   },
   {
     isbn: "9789026177422",
@@ -425,6 +425,6 @@ export const books: Book[] = [
     price: 18.5,
     genre: "Kinderboeken",
     category: "youth",
-    cover: "/images/covers/9789026177422.jpg",
+    cover: `${import.meta.env.BASE_URL}images/covers/9789026177422.jpg`,
   },
 ];
