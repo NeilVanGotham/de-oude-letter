@@ -2,8 +2,6 @@ import type { Route } from "./+types/home";
 import HeroSearch from "../hero-search/HeroSearch";
 import FeaturedBooks from "../featured-books/FeaturedBooks";
 import MediaCarousell from "../media-carousell/MediaCarousell";
-import type Book from "~/types/Book";
-import { useState } from "react";
 import { books } from "~/data/books";
 
 export function meta({}: Route.MetaArgs) {
@@ -18,16 +16,18 @@ export function meta({}: Route.MetaArgs) {
 
 export const handle = { heroSearch: true };
 
-export default function Home() {
-  const [fictionBooks, setFictionBooks] = useState<Book[]>(() =>
-    books.filter((book) => book.category === "fiction"),
-  );
+const fictionBooks = books.filter((book) => book.category === "fiction");
+const nonFictionBooks = books.filter((book) => book.category === "non-fiction");
+const childrenBooks = books.filter((book) => book.category === "youth");
 
+export default function Home() {
   return (
     <main>
       <HeroSearch />
       <FeaturedBooks />
       <MediaCarousell title="Fictie" books={fictionBooks} />
+      <MediaCarousell title="Non-Fictie" books={nonFictionBooks} />
+      <MediaCarousell title="Kinderboeken" books={childrenBooks} />
     </main>
   );
 }
