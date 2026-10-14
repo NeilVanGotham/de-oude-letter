@@ -17,10 +17,10 @@ export default function FeaturedBookItem({
       <img
         src={book.cover}
         alt={`Boekcover van ${book.title}`}
-        className="w-23 max-h-sm h-auto object-cover"
+        className="w-23 aspect-2/3 object-cover"
       />
       <div className="flex flex-col justify-center">
-        <p className="pb-2 text-amber-700 font-serif italic text-xs">
+        <p className="text-amber-700 font-serif italic text-xs">
           {catchPhrase}
         </p>
         <p className="font-serif font-medium text-lg group-hover:underline">

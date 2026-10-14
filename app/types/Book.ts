@@ -1,3 +1,5 @@
+export type BookCategory = "fiction" | "non-fiction" | "youth";
+
 export default interface Book {
   isbn: string;
   title: string;
@@ -5,5 +7,6 @@ export default interface Book {
   description: string;
   price: number;
   genre: string;
+  category: BookCategory;
   cover: string;
 }

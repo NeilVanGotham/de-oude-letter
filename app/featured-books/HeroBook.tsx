@@ -14,7 +14,7 @@ export default function HeroBook({
         <img
           src={book.cover}
           alt={`Boekcover van ${book.title}`}
-          className="w-[320px] h-121.5 object-cover"
+          className="h-121.5 aspect-2/3 object-cover"
         />
       </div>
       <div className="flex flex-col justify-center">
