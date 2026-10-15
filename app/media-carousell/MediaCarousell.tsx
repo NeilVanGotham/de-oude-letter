@@ -42,11 +42,11 @@ export default function MediaCarousell({
   };
 
   return (
-    <section className="max-w-6xl mx-auto py-8 group/carousel">
-      <div className="flex items-end justify-between pb-2">
+    <section className="max-w-6xl mx-auto py-6 sm:py-8 group/carousel">
+      <div className="flex items-end justify-between pb-2 px-4 xl:px-0">
         <h2 className="text-2xl font-serif font-medium">{title}</h2>
         {pageCount > 1 && (
-          <ol className="flex gap-1 opacity-0 transition-opacity group-hover/carousel:opacity-100">
+          <ol className="flex gap-1 opacity-0 transition-opacity group-hover/carousel:opacity-100 pointer-coarse:opacity-100">
             {Array.from({ length: pageCount }, (_, index) => (
               <li
                 key={index}
@@ -63,17 +63,17 @@ export default function MediaCarousell({
         <ul
           ref={trackRef}
           onScroll={updateScrollState}
-          className="flex gap-4 py-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none [&::-webkit-scrollbar]:hidden"
+          className="flex gap-3 sm:gap-4 py-4 sm:py-6 px-4 xl:px-0 scroll-px-4 xl:scroll-px-0 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none [&::-webkit-scrollbar]:hidden"
         >
           {books.map((book) => (
             <li
               key={book.isbn}
-              className="relative shrink-0 snap-start group/item cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10 first:origin-left last:origin-right"
+              className="relative shrink-0 snap-start group/item cursor-pointer transition-transform duration-300 pointer-fine:hover:scale-110 hover:z-10 first:origin-left last:origin-right"
             >
               <img
                 src={book.cover}
                 alt={`Boekcover van ${book.title}`}
-                className="h-60 aspect-2/3 object-cover shadow-md group-hover/item:shadow-xl"
+                className="h-44 sm:h-60 aspect-2/3 object-cover shadow-md group-hover/item:shadow-xl"
               />
               <div className="absolute inset-x-0 bottom-0 p-2 bg-linear-to-t from-black/80 to-transparent text-white opacity-0 transition-opacity group-hover/item:opacity-100">
                 <p className="font-serif font-medium text-sm leading-tight">
@@ -111,7 +111,7 @@ function CarousellButton({
       type="button"
       onClick={onClick}
       aria-label={isLeft ? "Vorige boeken" : "Volgende boeken"}
-      className={`absolute inset-y-6 z-20 w-12 flex items-center justify-center text-white cursor-pointer opacity-0 transition-opacity group-hover/carousel:opacity-100 focus-visible:opacity-100 ${
+      className={`absolute inset-y-6 z-20 w-12 hidden pointer-fine:flex items-center justify-center text-white cursor-pointer opacity-0 transition-opacity group-hover/carousel:opacity-100 focus-visible:opacity-100 ${
         isLeft
           ? "left-0 bg-linear-to-r from-black/60 to-transparent"
           : "right-0 bg-linear-to-l from-black/60 to-transparent"

@@ -31,9 +31,9 @@ export default function FeaturedBooks() {
   }, [currentIndex]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-4 max-w-6xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-4 max-w-6xl mx-auto px-4 xl:px-0">
       <HeroBook book={heroBook} catchPhrase={catchPhrases[currentIndex]} />
-      <ul className="flex flex-col gap-2">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-col gap-4 md:gap-2">
         {featuredBooks.map((book, index) => (
           <FeaturedBookItem
             key={book.isbn}

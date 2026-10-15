@@ -1,12 +1,12 @@
 export default function HeroSearch() {
   return (
-    <div className="py-16 px-8 flex flex-col justify-center gap-8 items-center">
-      <h2 className="text-5xl font-medium font-serif text-stone-800">
+    <div className="py-10 px-4 sm:py-16 sm:px-8 flex flex-col justify-center gap-8 items-center">
+      <h2 className="text-3xl sm:text-5xl text-center font-medium font-serif text-stone-800 dark:text-stone-100">
         Wat wil je lezen?
       </h2>
       <div
         id="hero-search"
-        className="col-start-1 col-end-3 row-start-2 row-end-3 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 flex items-center border pl-4 gap-2 border-amber-700/30 h-11.5 rounded-full overflow-hidden md:max-w-3xl w-full focus-within:ring-2 focus-within:ring-amber-700 bg-olive-50"
+        className="flex items-center border pl-4 gap-2 border-amber-700/30 h-11.5 rounded-full overflow-hidden md:max-w-3xl w-full focus-within:ring-2 focus-within:ring-amber-700 bg-olive-50"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -23,17 +23,17 @@ export default function HeroSearch() {
           className="w-full h-full outline-none text-stone-500 bg-transparent placeholder-stone-500 text-sm"
         />
       </div>
-      <div className="hidden md:flex gap-2">
-        <button className="inline-flex items-center rounded-full px-6 py-2 font-medium inset-ring inset-ring-stone-500/40 cursor-pointer hover:text-amber-700 hover:inset-ring-amber-700/60">
+      <div className="hidden sm:flex flex-wrap justify-center gap-2">
+        <button className="inline-flex items-center rounded-full px-6 py-2 whitespace-nowrap font-medium inset-ring inset-ring-stone-500/40 cursor-pointer hover:text-amber-700 hover:inset-ring-amber-700/60">
           kort maar krachtig
         </button>
-        <button className="inline-flex items-center rounded-full px-6 py-2 font-medium inset-ring inset-ring-stone-500/40 cursor-pointer hover:text-amber-700 hover:inset-ring-amber-700/60">
+        <button className="inline-flex items-center rounded-full px-6 py-2 whitespace-nowrap font-medium inset-ring inset-ring-stone-500/40 cursor-pointer hover:text-amber-700 hover:inset-ring-amber-700/60">
           voor op de trein
         </button>
-        <button className="inline-flex items-center rounded-full px-6 py-2 font-medium inset-ring inset-ring-stone-500/40 cursor-pointer hover:text-amber-700 hover:inset-ring-amber-700/60">
+        <button className="inline-flex items-center rounded-full px-6 py-2 whitespace-nowrap font-medium inset-ring inset-ring-stone-500/40 cursor-pointer hover:text-amber-700 hover:inset-ring-amber-700/60">
           misdaad en mysterie
         </button>
-        <button className="inline-flex items-center rounded-full px-6 py-2 font-medium inset-ring inset-ring-stone-500/40 cursor-pointer hover:text-amber-700 hover:inset-ring-amber-700/60">
+        <button className="inline-flex items-center rounded-full px-6 py-2 whitespace-nowrap font-medium inset-ring inset-ring-stone-500/40 cursor-pointer hover:text-amber-700 hover:inset-ring-amber-700/60">
           halloween
         </button>
       </div>
